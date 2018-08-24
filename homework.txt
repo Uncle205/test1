@@ -1,0 +1,39 @@
+create nonclustered index author_idd
+on authors(name,surname)
+
+create unique index author_iddd
+on authors(id)
+
+
+SELECT sum(id) 
+from books
+WHERE name LIKE '%a%'
+
+
+insert into publisher
+values (6, 'Vasia','KZ','21-01-2018')
+
+update authors
+set name = 'arthur'
+where id = 1
+
+
+alter table books
+add wherew int
+
+delete from books
+where publisher_id = 1
+
+select b.name, a.name
+from books b, authors a
+group by b.name, a.name
+
+
+
+select b.name from books b union 
+select a.name from authors a
+  
+
+
+
+название homework_index database
